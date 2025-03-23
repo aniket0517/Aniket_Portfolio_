@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket_Portfolio_</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2b0906de90.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, i'm Aniket <span> Singh </span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------about------------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Junior software developer || Full Stack Developer passionate about building innovative projects
+                        and continuously expanding my programming knowledge.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>MERN Stack</span><br>Full Stack Developer</li>
+                            <li><span>Web Development</span><br>web app Development</li>
+                            <li><span>DataBase</span><br>Managing and maintaining Database</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2024 - Current In Reliance</span><br>Managing and maintaining Database Help desk
+                                Work</li>
+                            <li><span>2022 - NCL (Northern Coalfields Limited)</span><br>Doing Database job As a Inter
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024 - Current</span><br>BTech (Computer Science) from KNP College of science and
+                                technology, BHOPAL</li>
+                            <li><span>2020 - 2023</span><br>Diplome (Computer Science) from Government Polytechnic
+                                Collegr, SINGRAULI</li>
+                            <li><span>2023 - 2024</span><br>Learn JavaScript, SQL, Pythan from BITS Institute, FARIDABAD
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------services------------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Web Development</h2>
+                    <p>web app Development</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>MERN Stack</h2>
+                    <p>Full Stack Developer</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>DataBase</h2>
+                    <p>Managing and maintaining Database</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------portfolio------------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Work</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/youtube.png">
+                    <div class="layer">
+                        <h3>YouTube Clone Project</h3>
+                        <p>A pixel-perfect recreation of YouTube's user interface with enhanced interactive elements.
+                            This frontend-focused project demonstrates advanced CSS and JavaScript skills.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/spotify.png">
+                    <div class="layer">
+                        <h3>Spotify</h3>
+                        <p>A feature-rich music streaming platform that replicates Spotify's core functionality with a
+                            modern UI. This project showcases advanced frontend development skills.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/portfolio.png">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive portfolio website featuring a real-time messaging system that allows potential
+                            clients to contact you directly.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ------------------contact------------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <div class="sub-title">Contact Me</div>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> singhaniket64835@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +918349157479</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1MS1hEV4QA/"><i class="fa-brands fa-facebook"></i></a>
+                        <a
+                            href="https://x.com/Aniket648345?fbclid=PAY2xjawJLZVtleHRuA2FlbQIxMQABpmmor1IWxXeXooQ-xNLHGaGaB3-akZ46Uq7VboN52fyWwYbX_vWeKmcKYA_aem_UDWrwBT0NZ9VFSKtJosTpQ"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/aniket.0517?igsh=MTBkOW5zMDk2YWlqbw=="><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/aniket-singh-6a21a229b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/resume1.pdf" class="btn btn2">Download My Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" name="Email" required>
+                        <textarea placeholder="Your Message" name="Message" row="6"></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Aniket Singh. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+        let sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0px";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzkFYYzHG3Y9NayEVnSfqVSuvPXZ18Ro9D5-T2rI0cVaFZQXX-1Bkxj-tush4ndFzt5iw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message send successfully Thanks for Contacting me" ;
+                    setTimeout(() => {
+                        msg.innerHTML = ""
+                    }, 2000);
+                    form.reset()
+                    })
+                .catch(error => console.error('Error!', error.message))
+        });
+    </script>
+
+</body>
+
+</html>
